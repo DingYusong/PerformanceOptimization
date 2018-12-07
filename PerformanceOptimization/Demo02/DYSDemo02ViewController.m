@@ -8,6 +8,7 @@
 
 #import "DYSDemo02ViewController.h"
 #import "DYSDemo02DrawView.h"
+#import "DYSDemo02DrawView2.h"
 
 @interface DYSDemo02ViewController ()
 
@@ -21,11 +22,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
         
-    DYSDemo02DrawView *view = [DYSDemo02DrawView new];
+//    DYSDemo02DrawView *view = [DYSDemo02DrawView new];
+    DYSDemo02DrawView2 *view = [DYSDemo02DrawView2 new];
+    
+    
     view.frame = self.view.bounds;
     [self.view addSubview:view];
 
-    self.drawView = view;
+//    self.drawView = view;
 }
 
 //-(void)updateViewConstraints {

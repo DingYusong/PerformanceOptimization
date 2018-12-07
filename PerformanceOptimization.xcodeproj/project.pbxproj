@@ -21,6 +21,7 @@
 		F73AC00C21BA810A00EF160A /* DYSDemo02ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73AC00A21BA810A00EF160A /* DYSDemo02ViewController.m */; };
 		F73AC00D21BA810A00EF160A /* DYSDemo02ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F73AC00B21BA810A00EF160A /* DYSDemo02ViewController.xib */; };
 		F73AC01021BA813600EF160A /* DYSDemo02DrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = F73AC00F21BA813600EF160A /* DYSDemo02DrawView.m */; };
+		F73AC01421BA9BD100EF160A /* DYSDemo02DrawView2.m in Sources */ = {isa = PBXBuildFile; fileRef = F73AC01321BA9BD100EF160A /* DYSDemo02DrawView2.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,8 @@
 		F73AC00B21BA810A00EF160A /* DYSDemo02ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSDemo02ViewController.xib; sourceTree = "<group>"; };
 		F73AC00E21BA813600EF160A /* DYSDemo02DrawView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDemo02DrawView.h; sourceTree = "<group>"; };
 		F73AC00F21BA813600EF160A /* DYSDemo02DrawView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo02DrawView.m; sourceTree = "<group>"; };
+		F73AC01221BA9BD100EF160A /* DYSDemo02DrawView2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDemo02DrawView2.h; sourceTree = "<group>"; };
+		F73AC01321BA9BD100EF160A /* DYSDemo02DrawView2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo02DrawView2.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +85,7 @@
 				F73ABFE621BA6E0900EF160A /* AppDelegate.m */,
 				F73ABFE821BA6E0900EF160A /* ViewController.h */,
 				F73ABFE921BA6E0900EF160A /* ViewController.m */,
-				F73AC00921BA810A00EF160A /* DYSDemo02ViewController.h */,
-				F73AC00A21BA810A00EF160A /* DYSDemo02ViewController.m */,
-				F73AC00B21BA810A00EF160A /* DYSDemo02ViewController.xib */,
-				F73AC00E21BA813600EF160A /* DYSDemo02DrawView.h */,
-				F73AC00F21BA813600EF160A /* DYSDemo02DrawView.m */,
+				F73AC01121BA994400EF160A /* Demo02 */,
 				F73ABFFB21BA708100EF160A /* DYSDemo01ViewController.h */,
 				F73ABFFC21BA708100EF160A /* DYSDemo01ViewController.m */,
 				F73ABFFD21BA708100EF160A /* DYSDemo01ViewController.xib */,
@@ -107,6 +106,20 @@
 				F73AC00321BA74AF00EF160A /* beauty.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		F73AC01121BA994400EF160A /* Demo02 */ = {
+			isa = PBXGroup;
+			children = (
+				F73AC00921BA810A00EF160A /* DYSDemo02ViewController.h */,
+				F73AC00A21BA810A00EF160A /* DYSDemo02ViewController.m */,
+				F73AC00B21BA810A00EF160A /* DYSDemo02ViewController.xib */,
+				F73AC00E21BA813600EF160A /* DYSDemo02DrawView.h */,
+				F73AC00F21BA813600EF160A /* DYSDemo02DrawView.m */,
+				F73AC01221BA9BD100EF160A /* DYSDemo02DrawView2.h */,
+				F73AC01321BA9BD100EF160A /* DYSDemo02DrawView2.m */,
+			);
+			path = Demo02;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,6 +200,7 @@
 			files = (
 				F73ABFEA21BA6E0900EF160A /* ViewController.m in Sources */,
 				F73ABFFE21BA708100EF160A /* DYSDemo01ViewController.m in Sources */,
+				F73AC01421BA9BD100EF160A /* DYSDemo02DrawView2.m in Sources */,
 				F73AC01021BA813600EF160A /* DYSDemo02DrawView.m in Sources */,
 				F73AC00C21BA810A00EF160A /* DYSDemo02ViewController.m in Sources */,
 				F73ABFF521BA6E0D00EF160A /* main.m in Sources */,

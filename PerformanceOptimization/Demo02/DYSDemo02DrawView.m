@@ -6,6 +6,10 @@
 //  Copyright © 2018 丁玉松. All rights reserved.
 //
 
+/**
+ 越画越多，则性能消耗越严重。可以看工程内截图。
+ 这样实现的问题在于，我们画得越多，程序就会越慢。因为每次移动手指的时候都会重绘整个贝塞尔路径（UIBezierPath），随着路径越来越复杂，每次重绘的工作就会增加，直接导致了帧数的下降。
+ */
 #import "DYSDemo02DrawView.h"
 
 @interface DYSDemo02DrawView ()
@@ -18,6 +22,7 @@
 
 - (void)yyi_init {
     _path = [UIBezierPath bezierPath];
+    _path.lineWidth = 5;
 }
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -54,21 +59,9 @@
 // An empty implementation adversely affects performance during animation.
 - (void)drawRect:(CGRect)rect {
     // Drawing code
-    
-    
-//    CGContextRef context = UIGraphicsGetCurrentContext();
-//
-//    CGRect drawRect = CGRectMake(rect.origin.x, rect.origin.y,rect.size.width, rect.size.height);
-//
-//    CGContextSetRGBFillColor(context, 100.0f/255.0f, 100.0f/255.0f, 100.0f/255.0f, 1.0f);
-//    CGContextFillRect(context, drawRect);
+    [[UIColor lightGrayColor] setFill];
+    UIRectFill(rect);
 
-    // Drawing code
-    [[UIColor blueColor] setFill];  // changes are here
-    UIRectFill(rect);               // and here
-
-    
-    
     [[UIColor whiteColor] setFill];
     [[UIColor redColor] setStroke];
 
