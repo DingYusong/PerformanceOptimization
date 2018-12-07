@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
+@property (nonatomic, copy) NSArray *dataSourceArray;
 
 @end
 
@@ -16,8 +20,44 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"性能调试";
+    self.dataSourceArray = @[
+                             @{
+                                 @"title":@"性能调优Demo",
+                                 @"page":@"DYSDemo01ViewController"
+                                 },
+                             @{
+                                 @"title":@"Core Graphics-矢量图形",
+                                 @"page":@"DYSDemo02ViewController"
+                                 },
+                             ];
+    self.tableView.rowHeight = 50;
 }
 
+#pragma mark - UITableViewDataSource
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataSourceArray.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CellID"];
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"CellID"];
+    }
+    
+    NSDictionary *dict = [self.dataSourceArray objectAtIndex:(self.dataSourceArray.count - indexPath.row - 1)];
+    cell.textLabel.text = [dict objectForKey:@"title"];
+    return cell;
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSDictionary *dict = [self.dataSourceArray objectAtIndex:(self.dataSourceArray.count - indexPath.row - 1)];
+    NSString *classString = [dict objectForKey:@"page"];
+    UIViewController *vc = [NSClassFromString(classString) new];
+    [self.navigationController pushViewController:vc animated:YES];
+}
 
 @end
