@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350C9FA821BBF9A0001370A7 /* DYSDemo02DrawView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 350C9FA721BBF9A0001370A7 /* DYSDemo02DrawView3.m */; };
+		350C9FAB21BBFC21001370A7 /* Chalk.png in Resources */ = {isa = PBXBuildFile; fileRef = 350C9FA921BBFC21001370A7 /* Chalk.png */; };
+		350C9FAC21BBFC21001370A7 /* Chalk@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 350C9FAA21BBFC21001370A7 /* Chalk@2x.png */; };
+		35D40F6721BC09BE008B03B3 /* DYSDemo02DrawView4.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D40F6621BC09BE008B03B3 /* DYSDemo02DrawView4.m */; };
+		35D40F6B21BC0CC5008B03B3 /* DYSDemo03ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D40F6921BC0CC5008B03B3 /* DYSDemo03ViewController.m */; };
+		35D40F6C21BC0CC5008B03B3 /* DYSDemo03ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 35D40F6A21BC0CC5008B03B3 /* DYSDemo03ViewController.xib */; };
 		F73ABFE721BA6E0900EF160A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F73ABFE621BA6E0900EF160A /* AppDelegate.m */; };
 		F73ABFEA21BA6E0900EF160A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F73ABFE921BA6E0900EF160A /* ViewController.m */; };
 		F73ABFED21BA6E0900EF160A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F73ABFEB21BA6E0900EF160A /* Main.storyboard */; };
@@ -25,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350C9FA621BBF9A0001370A7 /* DYSDemo02DrawView3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDemo02DrawView3.h; sourceTree = "<group>"; };
+		350C9FA721BBF9A0001370A7 /* DYSDemo02DrawView3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo02DrawView3.m; sourceTree = "<group>"; };
+		350C9FA921BBFC21001370A7 /* Chalk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chalk.png; sourceTree = "<group>"; };
+		350C9FAA21BBFC21001370A7 /* Chalk@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chalk@2x.png"; sourceTree = "<group>"; };
+		35D40F6521BC09BE008B03B3 /* DYSDemo02DrawView4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDemo02DrawView4.h; sourceTree = "<group>"; };
+		35D40F6621BC09BE008B03B3 /* DYSDemo02DrawView4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo02DrawView4.m; sourceTree = "<group>"; };
+		35D40F6821BC0CC5008B03B3 /* DYSDemo03ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDemo03ViewController.h; sourceTree = "<group>"; };
+		35D40F6921BC0CC5008B03B3 /* DYSDemo03ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo03ViewController.m; sourceTree = "<group>"; };
+		35D40F6A21BC0CC5008B03B3 /* DYSDemo03ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSDemo03ViewController.xib; sourceTree = "<group>"; };
 		F73ABFE221BA6E0900EF160A /* PerformanceOptimization.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PerformanceOptimization.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F73ABFE521BA6E0900EF160A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F73ABFE621BA6E0900EF160A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,11 +95,16 @@
 		F73ABFE421BA6E0900EF160A /* PerformanceOptimization */ = {
 			isa = PBXGroup;
 			children = (
+				350C9FA921BBFC21001370A7 /* Chalk.png */,
+				350C9FAA21BBFC21001370A7 /* Chalk@2x.png */,
 				F73AC00021BA749100EF160A /* images */,
 				F73ABFE521BA6E0900EF160A /* AppDelegate.h */,
 				F73ABFE621BA6E0900EF160A /* AppDelegate.m */,
 				F73ABFE821BA6E0900EF160A /* ViewController.h */,
 				F73ABFE921BA6E0900EF160A /* ViewController.m */,
+				35D40F6821BC0CC5008B03B3 /* DYSDemo03ViewController.h */,
+				35D40F6921BC0CC5008B03B3 /* DYSDemo03ViewController.m */,
+				35D40F6A21BC0CC5008B03B3 /* DYSDemo03ViewController.xib */,
 				F73AC01121BA994400EF160A /* Demo02 */,
 				F73ABFFB21BA708100EF160A /* DYSDemo01ViewController.h */,
 				F73ABFFC21BA708100EF160A /* DYSDemo01ViewController.m */,
@@ -118,6 +138,10 @@
 				F73AC00F21BA813600EF160A /* DYSDemo02DrawView.m */,
 				F73AC01221BA9BD100EF160A /* DYSDemo02DrawView2.h */,
 				F73AC01321BA9BD100EF160A /* DYSDemo02DrawView2.m */,
+				350C9FA621BBF9A0001370A7 /* DYSDemo02DrawView3.h */,
+				350C9FA721BBF9A0001370A7 /* DYSDemo02DrawView3.m */,
+				35D40F6521BC09BE008B03B3 /* DYSDemo02DrawView4.h */,
+				35D40F6621BC09BE008B03B3 /* DYSDemo02DrawView4.m */,
 			);
 			path = Demo02;
 			sourceTree = "<group>";
@@ -180,13 +204,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35D40F6C21BC0CC5008B03B3 /* DYSDemo03ViewController.xib in Resources */,
 				F73AC00821BA752200EF160A /* dog.png in Resources */,
 				F73ABFF221BA6E0D00EF160A /* LaunchScreen.storyboard in Resources */,
 				F73AC00D21BA810A00EF160A /* DYSDemo02ViewController.xib in Resources */,
 				F73AC00421BA74AF00EF160A /* baby.png in Resources */,
 				F73ABFFF21BA708100EF160A /* DYSDemo01ViewController.xib in Resources */,
 				F73ABFEF21BA6E0D00EF160A /* Assets.xcassets in Resources */,
+				350C9FAC21BBFC21001370A7 /* Chalk@2x.png in Resources */,
 				F73AC00621BA74AF00EF160A /* beauty.png in Resources */,
+				350C9FAB21BBFC21001370A7 /* Chalk.png in Resources */,
 				F73ABFED21BA6E0900EF160A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,7 +227,10 @@
 			files = (
 				F73ABFEA21BA6E0900EF160A /* ViewController.m in Sources */,
 				F73ABFFE21BA708100EF160A /* DYSDemo01ViewController.m in Sources */,
+				350C9FA821BBF9A0001370A7 /* DYSDemo02DrawView3.m in Sources */,
+				35D40F6721BC09BE008B03B3 /* DYSDemo02DrawView4.m in Sources */,
 				F73AC01421BA9BD100EF160A /* DYSDemo02DrawView2.m in Sources */,
+				35D40F6B21BC0CC5008B03B3 /* DYSDemo03ViewController.m in Sources */,
 				F73AC01021BA813600EF160A /* DYSDemo02DrawView.m in Sources */,
 				F73AC00C21BA810A00EF160A /* DYSDemo02ViewController.m in Sources */,
 				F73ABFF521BA6E0D00EF160A /* main.m in Sources */,

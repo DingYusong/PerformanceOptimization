@@ -27,8 +27,12 @@
                                  @"page":@"DYSDemo01ViewController"
                                  },
                              @{
-                                 @"title":@"Core Graphics-矢量图形",
+                                 @"title":@"Core Graphics-矢量图形/CAShapeLayer/脏矩形",
                                  @"page":@"DYSDemo02ViewController"
+                                 },
+                             @{
+                                 @"title":@"图像IO",
+                                 @"page":@"DYSDemo03ViewController"
                                  },
                              ];
     self.tableView.rowHeight = 50;
