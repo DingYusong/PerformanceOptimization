@@ -31,8 +31,20 @@
                                  @"page":@"DYSDemo02ViewController"
                                  },
                              @{
-                                 @"title":@"图像IO",
+                                 @"title":@"图像IO-无优化",
                                  @"page":@"DYSDemo03ViewController"
+                                 },
+                             @{
+                                 @"title":@"图像IO-加载优化",
+                                 @"page":@"DYSDemo04ViewController"
+                                 },
+                             @{
+                                 @"title":@"图像IO-加载优化，解压优化",
+                                 @"page":@"DYSDemo05ViewController"
+                                 },
+                             @{
+                                 @"title":@"图像IO-加载优化，解压优化，缓存优化",
+                                 @"page":@"DYSDemo06ViewController"
                                  },
                              ];
     self.tableView.rowHeight = 50;
@@ -52,6 +64,8 @@
     
     NSDictionary *dict = [self.dataSourceArray objectAtIndex:(self.dataSourceArray.count - indexPath.row - 1)];
     cell.textLabel.text = [dict objectForKey:@"title"];
+    cell.textLabel.numberOfLines = 0;
+//    [cell.textLabel sizeToFit];
     return cell;
 }
 

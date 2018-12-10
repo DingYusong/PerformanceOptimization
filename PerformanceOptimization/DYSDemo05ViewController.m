@@ -1,36 +1,32 @@
 //
-//  DYSDemo03ViewController.m
+//  DYSDemo05ViewController.m
 //  PerformanceOptimization
 //
-//  Created by DingYusong on 2018/12/8.
+//  Created by 丁玉松 on 2018/12/10.
 //  Copyright © 2018 丁玉松. All rights reserved.
 //
 
-#import "DYSDemo03ViewController.h"
+#import "DYSDemo05ViewController.h"
 
-@interface DYSDemo03ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
+@interface DYSDemo05ViewController ()<UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, copy) NSArray *imagePaths;
 
 @end
 
-@implementation DYSDemo03ViewController
+@implementation DYSDemo05ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    //Create folder references for any added folders
     self.imagePaths = [[NSBundle mainBundle] pathsForResourcesOfType:@"png" inDirectory:@"Vacation Photos"];
-
+    
     [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"Cell"];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
     layout.scrollDirection = kCollectionScrollDirection;
     self.collectionView.collectionViewLayout = layout;
 }
-
-
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     return self.imagePaths.count*100;
@@ -47,9 +43,9 @@
         [cell addSubview:imageView];
     }
     //图片-加载-耗时
-    imageView.image = [UIImage imageWithContentsOfFile:[self.imagePaths objectAtIndex:indexPath.row%11]];
+    //    imageView.image = [UIImage imageWithContentsOfFile:[self.imagePaths objectAtIndex:indexPath.row%11]];
     
-//优化1：加载-耗时优化 不卡主线程了，但是CPU的使用率同样没有下降
+    //    优化1：加载-耗时优化 不卡主线程了，但是CPU的使用率同样没有下降
 //    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
 //        UIImage *image =  [UIImage imageWithContentsOfFile:[self.imagePaths objectAtIndex:indexPath.row%11]];
 //        dispatch_async(dispatch_get_main_queue(), ^{
@@ -58,35 +54,24 @@
 //    });
     
     //优化2：解压耗时优化 强制解压提前渲染图片 可以感受得到相当的顺滑
-//    CGRect imageBounds = imageView.bounds;//异步线程里不可访问UIView.bounds
-//    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-//        UIImage *image =  [UIImage imageWithContentsOfFile:[self.imagePaths objectAtIndex:indexPath.row%11]];
-////        UIGraphicsBeginImageContext(imageView.bounds.size);
-//        UIGraphicsBeginImageContextWithOptions(imageBounds.size, YES, 0);
-//        [image drawInRect:imageBounds];
-//        image = UIGraphicsGetImageFromCurrentImageContext();
-//        UIGraphicsEndImageContext();
-//        
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            imageView.image = image;
-//        });
-//    });
+        CGRect imageBounds = imageView.bounds;//异步线程里不可访问UIView.bounds
+        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+            UIImage *image =  [UIImage imageWithContentsOfFile:[self.imagePaths objectAtIndex:indexPath.row%11]];
+            //        UIGraphicsBeginImageContext(imageView.bounds.size);
+            UIGraphicsBeginImageContextWithOptions(imageBounds.size, YES, 0);
+            [image drawInRect:imageBounds];
+            image = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+    
+            dispatch_async(dispatch_get_main_queue(), ^{
+                imageView.image = image;
+            });
+        });
     
     return cell;
 }
-
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     return kCollectionCellSize;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

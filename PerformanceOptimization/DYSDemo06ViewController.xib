@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYSDemo03ViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DYSDemo06ViewController">
             <connections>
-                <outlet property="collectionView" destination="fkK-Ei-0id" id="N81-vh-r70"/>
+                <outlet property="collectionView" destination="Vuw-FM-w37" id="j0p-th-JEM"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,27 +21,27 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fkK-Ei-0id">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Vuw-FM-w37">
                     <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s5b-Ev-nFT">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="y3J-iK-bSZ">
                         <size key="itemSize" width="400" height="300"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="Cqf-PQ-MBP"/>
-                        <outlet property="delegate" destination="-1" id="j0X-ug-VKa"/>
+                        <outlet property="dataSource" destination="-1" id="uxi-mi-A2a"/>
+                        <outlet property="delegate" destination="-1" id="UJD-VU-feZ"/>
                     </connections>
                 </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="fkK-Ei-0id" secondAttribute="trailing" id="0L2-GI-nUs"/>
-                <constraint firstItem="fkK-Ei-0id" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="TXf-Pm-vxi"/>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="fkK-Ei-0id" secondAttribute="bottom" id="Xza-pz-ais"/>
-                <constraint firstItem="fkK-Ei-0id" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="jGe-uj-2lI"/>
+                <constraint firstItem="Vuw-FM-w37" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="0tv-iv-dSe"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="Vuw-FM-w37" secondAttribute="bottom" id="Bco-12-pZx"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Vuw-FM-w37" secondAttribute="trailing" id="Lrg-EF-ajn"/>
+                <constraint firstItem="Vuw-FM-w37" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="SIj-zF-dBi"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
         </view>
