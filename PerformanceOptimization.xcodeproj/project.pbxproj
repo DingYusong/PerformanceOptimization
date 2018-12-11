@@ -35,6 +35,14 @@
 		F7622AA121BE831000856A8D /* DYSDemo05ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7622A9F21BE831000856A8D /* DYSDemo05ViewController.xib */; };
 		F7622AA521BE836600856A8D /* DYSDemo06ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7622AA321BE836600856A8D /* DYSDemo06ViewController.m */; };
 		F7622AA621BE836600856A8D /* DYSDemo06ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7622AA421BE836600856A8D /* DYSDemo06ViewController.xib */; };
+		F7FC6E1921BF606100501F74 /* DYSDemo07ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC6E1721BF606100501F74 /* DYSDemo07ViewController.m */; };
+		F7FC6E1A21BF606100501F74 /* DYSDemo07ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FC6E1821BF606100501F74 /* DYSDemo07ViewController.xib */; };
+		F7FC6E1D21BF72AF00501F74 /* Rounded.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FC6E1B21BF72AE00501F74 /* Rounded.png */; };
+		F7FC6E1E21BF72AF00501F74 /* Rounded@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F7FC6E1C21BF72AE00501F74 /* Rounded@2x.png */; };
+		F7FC6E2221BF8B4300501F74 /* DYSDemo08ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC6E2021BF8B4300501F74 /* DYSDemo08ViewController.m */; };
+		F7FC6E2321BF8B4300501F74 /* DYSDemo08ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FC6E2121BF8B4300501F74 /* DYSDemo08ViewController.xib */; };
+		F7FC6E2721BFB60E00501F74 /* DYSDemo09ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F7FC6E2521BFB60E00501F74 /* DYSDemo09ViewController.m */; };
+		F7FC6E2821BFB60E00501F74 /* DYSDemo09ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7FC6E2621BFB60E00501F74 /* DYSDemo09ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +89,17 @@
 		F7622AA321BE836600856A8D /* DYSDemo06ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo06ViewController.m; sourceTree = "<group>"; };
 		F7622AA421BE836600856A8D /* DYSDemo06ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSDemo06ViewController.xib; sourceTree = "<group>"; };
 		F7622AA721BE8C1600856A8D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		F7FC6E1621BF606100501F74 /* DYSDemo07ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDemo07ViewController.h; sourceTree = "<group>"; };
+		F7FC6E1721BF606100501F74 /* DYSDemo07ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo07ViewController.m; sourceTree = "<group>"; };
+		F7FC6E1821BF606100501F74 /* DYSDemo07ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSDemo07ViewController.xib; sourceTree = "<group>"; };
+		F7FC6E1B21BF72AE00501F74 /* Rounded.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Rounded.png; sourceTree = "<group>"; };
+		F7FC6E1C21BF72AE00501F74 /* Rounded@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Rounded@2x.png"; sourceTree = "<group>"; };
+		F7FC6E1F21BF8B4300501F74 /* DYSDemo08ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDemo08ViewController.h; sourceTree = "<group>"; };
+		F7FC6E2021BF8B4300501F74 /* DYSDemo08ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo08ViewController.m; sourceTree = "<group>"; };
+		F7FC6E2121BF8B4300501F74 /* DYSDemo08ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSDemo08ViewController.xib; sourceTree = "<group>"; };
+		F7FC6E2421BFB60E00501F74 /* DYSDemo09ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSDemo09ViewController.h; sourceTree = "<group>"; };
+		F7FC6E2521BFB60E00501F74 /* DYSDemo09ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSDemo09ViewController.m; sourceTree = "<group>"; };
+		F7FC6E2621BFB60E00501F74 /* DYSDemo09ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DYSDemo09ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +132,8 @@
 		F73ABFE421BA6E0900EF160A /* PerformanceOptimization */ = {
 			isa = PBXGroup;
 			children = (
+				F7FC6E1B21BF72AE00501F74 /* Rounded.png */,
+				F7FC6E1C21BF72AE00501F74 /* Rounded@2x.png */,
 				F73AC02C21BE1BE900EF160A /* Vacation Photos */,
 				350C9FA921BBFC21001370A7 /* Chalk.png */,
 				350C9FAA21BBFC21001370A7 /* Chalk@2x.png */,
@@ -121,6 +142,15 @@
 				F73ABFE621BA6E0900EF160A /* AppDelegate.m */,
 				F73ABFE821BA6E0900EF160A /* ViewController.h */,
 				F73ABFE921BA6E0900EF160A /* ViewController.m */,
+				F7FC6E2421BFB60E00501F74 /* DYSDemo09ViewController.h */,
+				F7FC6E2521BFB60E00501F74 /* DYSDemo09ViewController.m */,
+				F7FC6E2621BFB60E00501F74 /* DYSDemo09ViewController.xib */,
+				F7FC6E1F21BF8B4300501F74 /* DYSDemo08ViewController.h */,
+				F7FC6E2021BF8B4300501F74 /* DYSDemo08ViewController.m */,
+				F7FC6E2121BF8B4300501F74 /* DYSDemo08ViewController.xib */,
+				F7FC6E1621BF606100501F74 /* DYSDemo07ViewController.h */,
+				F7FC6E1721BF606100501F74 /* DYSDemo07ViewController.m */,
+				F7FC6E1821BF606100501F74 /* DYSDemo07ViewController.xib */,
 				F7622AA221BE836600856A8D /* DYSDemo06ViewController.h */,
 				F7622AA321BE836600856A8D /* DYSDemo06ViewController.m */,
 				F7622AA421BE836600856A8D /* DYSDemo06ViewController.xib */,
@@ -239,8 +269,13 @@
 				F73AC00D21BA810A00EF160A /* DYSDemo02ViewController.xib in Resources */,
 				F73AC00421BA74AF00EF160A /* baby.png in Resources */,
 				F7622A9C21BE761300856A8D /* DYSDemo04ViewController.xib in Resources */,
+				F7FC6E1E21BF72AF00501F74 /* Rounded@2x.png in Resources */,
 				F73AC02D21BE1BE900EF160A /* Vacation Photos in Resources */,
+				F7FC6E1A21BF606100501F74 /* DYSDemo07ViewController.xib in Resources */,
+				F7FC6E2821BFB60E00501F74 /* DYSDemo09ViewController.xib in Resources */,
+				F7FC6E1D21BF72AF00501F74 /* Rounded.png in Resources */,
 				F7622AA121BE831000856A8D /* DYSDemo05ViewController.xib in Resources */,
+				F7FC6E2321BF8B4300501F74 /* DYSDemo08ViewController.xib in Resources */,
 				F73ABFFF21BA708100EF160A /* DYSDemo01ViewController.xib in Resources */,
 				F73ABFEF21BA6E0D00EF160A /* Assets.xcassets in Resources */,
 				F7622AA621BE836600856A8D /* DYSDemo06ViewController.xib in Resources */,
@@ -259,12 +294,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				F73ABFEA21BA6E0900EF160A /* ViewController.m in Sources */,
+				F7FC6E2721BFB60E00501F74 /* DYSDemo09ViewController.m in Sources */,
 				F7622AA021BE831000856A8D /* DYSDemo05ViewController.m in Sources */,
+				F7FC6E2221BF8B4300501F74 /* DYSDemo08ViewController.m in Sources */,
 				F73ABFFE21BA708100EF160A /* DYSDemo01ViewController.m in Sources */,
 				350C9FA821BBF9A0001370A7 /* DYSDemo02DrawView3.m in Sources */,
 				F7622A9B21BE761300856A8D /* DYSDemo04ViewController.m in Sources */,
 				F7622AA521BE836600856A8D /* DYSDemo06ViewController.m in Sources */,
 				35D40F6721BC09BE008B03B3 /* DYSDemo02DrawView4.m in Sources */,
+				F7FC6E1921BF606100501F74 /* DYSDemo07ViewController.m in Sources */,
 				F73AC01421BA9BD100EF160A /* DYSDemo02DrawView2.m in Sources */,
 				35D40F6B21BC0CC5008B03B3 /* DYSDemo03ViewController.m in Sources */,
 				F73AC01021BA813600EF160A /* DYSDemo02DrawView.m in Sources */,

@@ -46,6 +46,18 @@
                                  @"title":@"图像IO-加载优化，解压优化，缓存优化",
                                  @"page":@"DYSDemo06ViewController"
                                  },
+                             @{
+                                 @"title":@"图层性能-隐式绘制/离屏渲染-圆角",
+                                 @"page":@"DYSDemo07ViewController"
+                                 },
+                             @{
+                                 @"title":@"图层性能-减少图层数量",
+                                 @"page":@"DYSDemo08ViewController"
+                                 },
+                             @{
+                                 @"title":@"图层性能-减少图层数量，部分实例化优化",
+                                 @"page":@"DYSDemo09ViewController"
+                                 },
                              ];
     self.tableView.rowHeight = 50;
 }
